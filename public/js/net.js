@@ -97,8 +97,7 @@ export function backoffDelay(attempt, rand = Math.random) {
  * @returns {string}
  */
 export function defaultWsUrl(loc = globalThis.location) {
-  if (!loc || !loc.host) return 'ws://localhost:3000/ws';
-  return `${loc.protocol === 'https:' ? 'wss' : 'ws'}://${loc.host}/ws`;
+  return 'ws://103.205.253.194:27527/ws';
 }
 
 const WS_OPEN = 1;
